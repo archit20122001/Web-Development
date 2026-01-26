@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>HTML Form</legend>
+        <label for="Name">Enter Name: </label>
+        <input type="text" name="User's Name" id="Name" />
+        <br />
+        <br />
+        <label for="email">Enter Email ID: </label>
+        <input type="text" id="email" placeholder="abc@xyz.com" />
+        <br />
+        <br />
+        <label for="Password1">Enter Password: </label>
+        <input type="password" id="Password1" />
+        <br />
+        <br />
+        <label for="Password2">Confirm Password: </label>
+        <input type="password" id="Password2" />
+        <br />
+        <br />
+        <label for="datepicker">Choose Date of Birth: </label>
+        <input type="date" id="datepicker" />
+        <br />
+        <br />
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="Gender" value="Male" id="Gender" />Male
+        <input type="radio" name="Gender" value="Female" id="Gender" />Female
+        <br />
+        <br />
+        <label for="Selector">Choose years of EMI: </label>
+        <select name="Quantity" id="Selector">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <br />
+        <br />
+        <label for="Seletor2">Choose Colour Combinations: </label>
+        <select id="Seletor2">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Brown">Brown</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Cyan">Cyan</option>
+        </select>
+        <br />
+        <br />
+        <label for="textfield">Product Description: </label>
+        <textarea
+          id="textfield"
+          cols="30"
+          rows="10"
+          placeholder="Write Here...."
+          style="vertical-align: top"
+        ></textarea>
+        <!--The style used here is a CSS attribute and not from base HTML-->
+        <br />
+        <br />
+        <label for="Image">Upload image for better understanding: </label>
+        <input type="file" name="Imginput" id="Image" />
+        <br />
+        <br />
+        <label for="Wrap">Complimentry Wrapping Paper: </label>
+        <input type="checkbox" name="Wrapper" id="Wrap" />
+        <br />
+        <br />
+        <input
+          type="image"
+          name="imagebutton"
+          id="ImgButton"
+          alt="Click Here"
+          src="blue arrow.png"
+          height="20"
+          width="30"
+        />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
