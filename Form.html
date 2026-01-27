@@ -34,7 +34,7 @@
         <input type="radio" name="Gender" value="Female" id="Gender" />Female
         <br />
         <br />
-        <label for="Selector">Choose years of EMI: </label>
+        <label for="Selector">Choose number of colours: </label>
         <select name="Quantity" id="Selector">
           <option value="1">1</option>
           <option value="2">2</option>
@@ -43,7 +43,8 @@
         <br />
         <br />
         <label for="Seletor2">Choose Colour Combinations: </label>
-        <select id="Seletor2">
+        <select id="Seletor2" required>
+          <option value="" disabled selected hidden>--Choose colour--</option>
           <option value="Red">Red</option>
           <option value="Blue">Blue</option>
           <option value="Green">Green</option>
@@ -53,6 +54,10 @@
           <option value="White">White</option>
           <option value="Cyan">Cyan</option>
         </select>
+        <br />
+        <br />
+        <label for="PaintAge">Age of paint(s) used: </label>
+        <input type="number" name="PaintAge" id="PaintAge" min="0" max="20" />
         <br />
         <br />
         <label for="textfield">Product Description: </label>
