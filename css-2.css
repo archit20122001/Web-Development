@@ -1,0 +1,13 @@
+#id1 {
+    color: cadetblue;
+}
+
+.paraclass1 {
+    background-color: thistle;
+}
+
+#article1,
+.paraclass2 {
+    background-color: lavender;
+    color: blue;
+}
