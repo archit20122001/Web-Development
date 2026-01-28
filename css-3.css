@@ -1,15 +1,21 @@
+h1{
+    text-align: center;
+    color: cornflowerblue;
+}
+
 #p1 {
     font-style: italic;
     font-size: 15px;
     font-weight: 300;
-    background-color: steelblue;
+    color: white;
+    background-color: rgb(133, 178, 214);
 }
 
 #p2 {
     font-family: cursive;
     line-height: 20px;
     font-style: italic;
-    background-color: cornflowerblue;
+    background-color: rgb(140, 174, 236);
 }
 #p3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,6 +40,6 @@
 }
 
 .c3{
-    background-color: #5834ba;
-    color:hsl(240, 50, 50)
+    background-color: #3457bab8;
+    color: white
 }
