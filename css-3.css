@@ -1,0 +1,39 @@
+#p1 {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: steelblue;
+}
+
+#p2 {
+    font-family: cursive;
+    line-height: 20px;
+    font-style: italic;
+    background-color: cornflowerblue;
+}
+#p3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    background-color: lavender;
+}
+
+.myclass {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+    background-color: lavenderblush;
+}
+
+.c2{
+    color: darkblue;
+    background-color: rgb(203, 171, 255);
+}
+
+.c3{
+    background-color: #5834ba;
+    color:hsl(240, 50, 50)
+}
