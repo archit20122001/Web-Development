@@ -1,0 +1,32 @@
+div {
+    border: 2px solid green;
+}
+
+img {
+    margin: 10px;
+    border: 1px solid blue;
+    width: 150px;
+}
+
+.container1 {
+    position: relative;
+    height: 500px;
+    background-color: azure;
+    margin-bottom: 10px;
+}
+
+.image3 {
+    position: fixed;
+    /*position for entire web page*/
+}
+
+.image4 {
+    position: sticky;
+    /*position in parent container only*/
+    top: 150px;
+}
+
+.container2 {
+    background-color: lavender;
+    height: 400px;
+}
