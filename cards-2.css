@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3dffc2;
+    background: linear-gradient(90deg, rgba(61, 255, 194, 1) 0%, rgba(112, 63, 191, 1) 51%, rgba(0, 212, 255, 1)100%);
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.description {
+    width: 80%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description h2 {
+    padding: 5%;
+}
+
+.description p {
+    padding: 5%;
+    text-align: center;
+}
+
+.subbox{
+    width:80%;
+    height:10%;
+    border-radius:10px;
+    background-color:rgb(158, 194, 255);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftbox{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagebox{
+    width:30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagebox img{
+    width:100%;
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right:15%;
+}
+
+.textbox p{
+    font-size: 15px;
+}
+
+.rightbox{
+    padding: 5%;
+}
+
+.rightbox a{
+    text-decoration: none;
+}
+
+#payment {
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: rgb(18, 18, 102);
+    color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cancel {
+    margin: 5%;
+}
+
+.cancel a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
