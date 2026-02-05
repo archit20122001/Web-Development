@@ -5,16 +5,154 @@
 }
 
 body {
+    margin: 1rem;
     height: 100%;
     width: 100%;
 }
 
 .container {
-    max-width: 95vw;
+    max-width: 75vw;
     padding: 2 rem 1 rem;
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
+}
+
+.header-container {
+    margin-bottom: 2.8rem;
+}
+
+.header-title {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-description {
+    max-width: 568px;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    margin: 0 auto;
+}
+
+.main-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width: 680px) {
+    .main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1060px) {
+    .main-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1400px) {
+    .main-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+
+.card-image {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card-image-container:hover .card-image {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(2, 17, 59);
+}
+
+.card-title-anchor:hover .card-title {
+    color: rgb(100, 100, 227);
+}
+
+.card-description {
+    color: rgb(2, 15, 44);
+    font-size: 1rem;
+}
+
+.card-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar-container {
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 50%;
+    background-color: rgb(225, 225, 225);
+}
+
+.author-info-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.author-name {
+    color: rgb(53, 53, 146);
+}
+
+.author-date {
+    color: rgb(146, 146, 146);
+}
+
+.card-tag-container {
+    font-size: 0.9rem;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 0.4rem;
+    padding: 0.25rem 0.5rem;
+    color: rgb(101, 101, 101);
 }
