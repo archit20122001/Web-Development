@@ -25,7 +25,7 @@
 
 
 // let a = 10;
-// a = "bababr";
+// a = "rask";
 // a = true;
 // a = null;
 
@@ -37,7 +37,7 @@
 
 
 // let marks = 20.2345;
-// marks = "Babbar";
+// marks = "Arks";
 // marks = true;
 
 
