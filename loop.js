@@ -55,3 +55,32 @@ do {
 while (i > 4);
 
 // The problem with do while loop is it will execute the first iteration without checking the condition, so it will run once no matter what.
+
+let arr = [10, 20, 30, 40, 50, 60];
+
+let length = arr.length;
+console.log("The length of the array is: ", length);
+
+arr.forEach((value, index) => {
+    console.log("Number: ", value, "Index: ", index);
+})
+
+let obj = {
+    name: "Archit",
+    age: 25,
+    weight: 85,
+    height: "5'9 feet",
+    greet: function () {
+        console.log('hello');
+    }
+};
+
+for (let key in obj) {
+    console.log(key, ": ", obj[key]);
+}
+
+let fullName = "Archit Kumar Singh";
+
+for (let value of fullName){
+    console.log(value);
+}
