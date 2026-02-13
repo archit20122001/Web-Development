@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+}
+
+#percentInput {
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid rgb(69, 69, 69);
+    width: 4rem;
+    font-size: 1rem;
+}
+
+.progress-container {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 0.01rem solid rgb(183, 183, 183);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    /* Ensures the bar doesn't spill over the rounded corners */
+    height: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(135, 99, 255);
+    /* Green for success */
+    transition: width 5s linear;
+    /* This makes the movement smooth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.status-label {
+    margin-top: 0.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #3b3b3b;
+    text-align: left;
+    /* Aligns to the bottom left */
+}
+
+.button-group {
+    margin-top: 2rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.fill-btn img {
+  width: 2rem;  /* Adjust size as needed */
+  display: block;
+}
+
+/* Hover effect to show it's clickable */
+.fill-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+/* Grayscale effect when disabled */
+.fill-btn:disabled img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
