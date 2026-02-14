@@ -4,42 +4,76 @@ const duration = 5000;
 const progressBar = document.getElementById('myProgressBar');
 const statusText = document.getElementById('statusText');
 const percentInput = document.getElementById('percentInput');
-const buttons = document.querySelectorAll('.fill-btn');
+const fillButtons = document.querySelectorAll('.fill-btn');
+// Changed to select multiple reduce buttons
+const reduceButtons = document.querySelectorAll('.reduce-btn');
 
-buttons.forEach(button => {
+// --- INCREASE LOGIC ---
+fillButtons.forEach(button => {
+    button.setAttribute('data-used', 'false');
+
     button.addEventListener('click', function () {
-        const increment = parseFloat(percentInput.value) || 0;
+        const inputValue = percentInput.value.trim();
+        
+        // Check if empty or zero
+        if (inputValue === "" || parseFloat(inputValue) === 0) {
+            alert("Please enter a percentage value before clicking a button.");
+            return; 
+        }
 
-        // CONDITION 1: If input is > 100, do nothing
+        const increment = parseFloat(inputValue);
+
         if (increment > 100) {
             alert("Please enter a value between 1 and 100");
             return;
         }
 
+        // Mark as permanently used
+        this.setAttribute('data-used', 'true');
+
         const startValue = currentProgress;
         const endValue = Math.min(currentProgress + increment, 100);
         currentProgress = endValue;
 
-        // Update UI
-        progressBar.style.width = endValue + '%';
-        syncCounter(startValue, endValue, duration);
-
-        // Disable the clicked button
-        this.disabled = true;
-
-        // CONDITION 2: Check if bar is now full
-        if (currentProgress >= 100) {
-            progressBar.classList.add('full');
-            disableAllButtons(); // Turn off everything else
-        }
+        updateUI(startValue, endValue);
     });
 });
 
-// Helper to disable all remaining buttons
-function disableAllButtons() {
-    buttons.forEach(btn => {
-        btn.disabled = true;
+// --- NEW DECREASE LOGIC (Multiple Buttons) ---
+reduceButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        // Pull the specific value from the button's data attribute
+        const reductionValue = parseFloat(this.getAttribute('data-reduce')) || 0;
+        
+        const startValue = currentProgress;
+        const endValue = Math.max(currentProgress - reductionValue, 0);
+        currentProgress = endValue;
+
+        updateUI(startValue, endValue);
     });
+});
+
+// Consolidating UI updates
+function updateUI(start, end) {
+    // 1. Trigger Bar Animation
+    progressBar.style.width = end + '%';
+
+    // 2. Trigger Number Animation
+    syncCounter(start, end, duration);
+
+    // 3. Handle Button States
+    if (end >= 100) {
+        progressBar.classList.add('full');
+        // Disable all increase buttons
+        fillButtons.forEach(btn => btn.disabled = true);
+    } else {
+        progressBar.classList.remove('full');
+        // Re-enable only the increase buttons that weren't used yet
+        fillButtons.forEach(btn => {
+            const wasUsed = btn.getAttribute('data-used') === 'true';
+            btn.disabled = wasUsed;
+        });
+    }
 }
 
 function syncCounter(start, end, duration) {

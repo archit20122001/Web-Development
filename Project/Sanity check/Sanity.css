@@ -14,6 +14,20 @@
     align-items: center;
 }
 
+/* Updated Ghost Container for images */
+.ghost-container {
+    padding: 0.5rem;
+    width: 50%; /* Adjusted to match progress bar width */
+    height: 10%;
+    border: 0.1rem solid rgb(183, 183, 183);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.3rem;
+}
+
 .controls {
     margin-bottom: 2rem;
     font-family: sans-serif;
@@ -30,56 +44,63 @@
 .progress-container {
     width: 50%;
     background-color: rgb(255, 255, 255);
-    border: 0.01rem solid rgb(183, 183, 183);
+    border: 0.1rem solid rgb(183, 183, 183);
     border-radius: 0.3rem;
     overflow: hidden;
-    /* Ensures the bar doesn't spill over the rounded corners */
     height: 1.5rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0.5rem 0; /* Adjusted margins */
 }
 
 .progress-bar {
     height: 100%;
     width: 0%;
     background-color: rgb(135, 99, 255);
-    /* Green for success */
     transition: width 5s linear;
-    /* This makes the movement smooth */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
 }
 
 .status-label {
-    margin-top: 0.5rem;
     font-family: sans-serif;
     font-weight: bold;
     color: #3b3b3b;
     text-align: left;
-    /* Aligns to the bottom left */
 }
 
 .button-group {
     margin-top: 2rem;
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
 }
 
-.fill-btn img {
-  width: 2rem;  /* Adjust size as needed */
-  display: block;
+/* General Button Reset for Image Buttons */
+.fill-btn, .reduce-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s linear;
 }
 
-/* Hover effect to show it's clickable */
-.fill-btn:hover:not(:disabled) {
-  transform: scale(1.1);
+.fill-btn img, .reduce-btn img {
+    width: 3rem;
+    display: block;
 }
 
-/* Grayscale effect when disabled */
+.reduce-btn img {
+    width: 2.5rem; /* Slightly smaller for the ghost container */
+}
+
+.fill-btn:hover:not(:disabled), .reduce-btn:hover:not(:disabled) {
+    transform: scale(1.1);
+}
+
+/* States for Increase Buttons */
 .fill-btn:disabled img {
-  filter: grayscale(100%);
-  opacity: 0.5;
-  cursor: not-allowed;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Styling for the reduce buttons when bar is empty (optional) */
+.reduce-btn:disabled img {
+    opacity: 0.2;
+    cursor: not-allowed;
 }
