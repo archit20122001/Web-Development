@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Sanity.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="controls">
+        <label for="percentInput">Percent per click:</label>
+        <input type="number" id="percentInput" placeholder="0" min="1" max="100" />
+      </div>
+
+      <div class="ghost-container">
+        <button class="reduce-btn" data-reduce="10">
+          <img src="Media/Regular Ghost.webp" alt="Reduce 10%" />
+        </button>
+        <button class="reduce-btn" data-reduce="20">
+          <img src="Media/Oni.webp" alt="Reduce 20%" />
+        </button>
+        <button class="reduce-btn" data-reduce="15">
+          <img src="Media/Yurei.webp" alt="Reduce 20%" />
+        </button>
+      </div>
+
+      <div class="progress-container">
+        <div id="myProgressBar" class="progress-bar"></div>
+      </div>
+
+      <div style="width: 50%;">
+        <div id="statusText" class="status-label">0%</div>
+      </div>
+
+      <div class="button-group">
+        <button class="fill-btn">
+          <img src="Media/Epipen.png" alt="Add Progress" />
+        </button>
+        <button class="fill-btn">
+          <img src="Media/Epipen.png" alt="Add Progress" />
+        </button>
+        <button class="fill-btn">
+          <img src="Media/Epipen.png" alt="Add Progress" />
+        </button>
+        <button class="fill-btn">
+          <img src="Media/Epipen.png" alt="Add Progress" />
+        </button>
+      </div>
+    </div>
+    <script src="Sanity.js"></script>
+  </body>
+</html>

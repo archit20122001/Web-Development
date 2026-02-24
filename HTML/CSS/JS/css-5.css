@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*This component ensures that the box size does not increase as, the content will shrink accordingly*/
+}
+
+#i1,
+#i2 {
+    border: 2px solid red;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    padding: 20px;
+    display: inline;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 100px;
+}
+
+span {
+    border: 2px solid green;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+#s1 {
+    border: 2px solid green;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}

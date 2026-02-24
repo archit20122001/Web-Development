@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tally Counter</title>
+    <link rel="stylesheet" href="tally-counter.css" />
+  </head>
+  <body>
+    <div class="counter-container">
+      <h1>Tally Counter</h1>
+      <div id="display">0</div>
+
+      <div class="controls">
+        <button onclick="changeCount(-1)">-</button>
+        <button onclick="resetCount()">Reset</button>
+        <button onclick="changeCount(1)">+</button>
+      </div>
+    </div>
+    <script src="tally-counter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    border: 5px solid rgb(155, 208, 255);
+    border-radius: 10px;
+}
+
+.box1 {
+    margin: 10px;
+    height: 80px;
+    width: 200px;
+    background-color: lavender;
+    border-radius: 10px;
+    border: 5px solid rgb(177, 177, 255);
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+.box2 {
+    margin: 10px;
+    height: 80px;
+    width: 200px;
+    background-color: lavender;
+    border-radius: 10px;
+    border: 5px solid rgb(177, 177, 255);
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.box3 {
+    margin: 10px;
+    height: 80px;
+    width: 200px;
+    background-color: lavender;
+    border-radius: 10px;
+    border: 5px solid rgb(177, 177, 255);
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.85, 1.76, 0.27, -0.83);
+}
+
+.box4 {
+    margin: 10px;
+    height: 80px;
+    width: 200px;
+    background-color: lavender;
+    border-radius: 10px;
+    border: 5px solid rgb(177, 177, 255);
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(1, 1.68, 0.23, -0.53);
+}
+
+.box5 {
+    margin: 10px;
+    height: 80px;
+    width: 200px;
+    background-color: rgb(163, 215, 255);
+    border-radius: 10px;
+    border: 5px solid rgb(98, 187, 255);
+    position: relative;
+    /* animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 2s;
+        animation-timing-function: cubic-bezier(1, 1.68, 0.23, -0.53); */
+    /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+    animation: 5s linear 2s infinite alternate running leftMovement;
+}
+
+@keyframes rightMovement {
+    from {
+        top: 0;
+        left: 0;
+    }
+
+    to {
+        top: 0;
+        left: 1200px;
+    }
+}
+
+@keyframes leftMovement {
+    from {
+        top: 300px;
+        left: 1200px;
+    }
+
+    to {
+        top: 300px;
+        left: 0px;
+    }
+}

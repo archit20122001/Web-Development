@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 10px;
+    width: 700px;
+    border: 2px solid rgb(167, 167, 255);
+    border-radius: 10px;
+    background-color: lavender;
+    display: flex;
+}
+
+p {
+    margin: 10px;
+    border: 2px solid rgb(178, 219, 255);
+    border-radius: 5px;
+}
+
+#boxleft {
+    margin: 10px;
+    border: 2px solid rgb(178, 219, 255);
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 47%;
+}
+
+#boxright {
+    margin: 10px;
+    border: 2px solid rgb(192, 255, 255);
+    border-radius: 10px;
+    background-color: azure;
+    width: 47%;
+}
+
+img {
+    margin: 10px;
+    border: 2px solid rgb(168, 215, 255);
+    border-radius: 10px;
+    width: 300px;
+}
+
+@media(max-width: 1000px){
+    .container {
+        flex-direction: column;
+    }
+}
