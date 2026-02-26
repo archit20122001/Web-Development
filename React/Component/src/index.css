@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d4d4ff;
+  background: linear-gradient(1deg, rgba(212, 212, 255, 1) 0%, rgba(166, 166, 224, 1) 38%, rgba(140, 140, 255, 1) 100%);
+  color: aliceblue;
+  font-size: 15 rem;
+  font-weight: bold;
+}
