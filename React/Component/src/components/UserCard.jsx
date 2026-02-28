@@ -2,12 +2,12 @@ import React from 'react'
 import birdlogo from '../assets/birdlogo.png'
 import './UserCard.css'
 
-const UserCard = () => {
+const UserCard = (props) => {
   return (
     <div className='user-container'>
-      <p id='user'>Archit Kumar Singh</p>
-      <img id='user-img' src={birdlogo} alt="User Logo" />
-      <p id='user-desc'>Description of the card</p>
+      <p id='user'>{props.name}</p>
+      <img id='user-img' src={props.img} alt={props.name} />
+      <p id='user-desc'>{props.desc}</p>
     </div>
   )
 }
