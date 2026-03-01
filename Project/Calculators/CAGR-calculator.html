@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAGR Calculator</title>
+    <link rel="stylesheet" href="CAGR-calculator.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h2>CAGR Calculator</h2>
+
+      <div class="calculator-card">
+        <div class="calculator-inputs">
+          <div class="input-row">
+            <label>Initial Investment (₹):</label>
+            <input type="number" value="5000" class="value-input" />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="initial-investment-slider"
+              min="0"
+              max="100000"
+              value="5000"
+            />
+          </div>
+
+          <div class="input-row">
+            <label>Final Investment (₹):</label>
+            <input type="number" value="25000" class="value-input" />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="final-investment-slider"
+              min="0"
+              max="100000"
+              value="25000"
+            />
+          </div>
+
+          <div class="input-row">
+            <label>Duration of investment :</label>
+            <input type="number" value="5" class="value-input inline-value" />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="duration-slider"
+              min="1"
+              max="30"
+              value="5"
+            />
+          </div>
+        </div>
+
+        <div class="output-box">
+          <div class="cagr-percentage">
+            <span class="label-text">Your CAGR Percentage is:</span>
+            <span class="value-text">38%</span>
+          </div>
+          <hr class="separator-line" />
+          <div class="summary-values">
+            <div class="summary-item">
+              <span>Initial Investment: ₹</span>
+              <span class="value-text">5,000</span>
+            </div>
+            <div class="summary-item">
+              <span>Final Investment: ₹</span>
+              <span class="value-text">25,000</span>
+            </div>
+          </div>
+          <hr class="separator-line" />
+          <div class="progress-container">
+            <div class="progress-bar-fill" style="width: 38%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="CAGR-calculator.js"></script>
+  </body>
+</html>
