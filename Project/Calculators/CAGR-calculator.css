@@ -11,11 +11,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Header is right-aligned to match the image */
+/* Header is center-aligned */
 .calculator-container h2 {
     font-size: 28px;
     font-weight: 400;
-    text-align: right;
+    text-align: center;
     margin-bottom: 20px;
     margin-top: 0;
     color: #333;

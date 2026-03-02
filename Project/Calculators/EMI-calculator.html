@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="EMI-calculator.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+        <h2>EMI Calculator</h2>
+      <div class="calculator-card">
+        <div class="tabs-container">
+          <button class="tab active">Car Loan</button>
+          <button class="tab">Bike Loan</button>
+          <button class="tab">Personal Loan</button>
+          <button class="tab">Consumer Loan</button>
+        </div>
+
+        <div class="calculator-inputs">
+          <div class="input-row">
+            <label>Loan Amount (₹):</label>
+            <input
+              type="number"
+              id="loan-amount-input"
+              class="value-input"
+              value="400000"
+            />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="loan-amount-slider"
+              min="10000"
+              max="2000000"
+              value="400000"
+              step="10000"
+            />
+          </div>
+
+          <div class="input-row">
+            <label>Interest Rate (%):</label>
+            <input
+              type="number"
+              id="interest-rate-input"
+              class="value-input"
+              value="8.5"
+              step="0.1"
+            />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="interest-rate-slider"
+              min="1"
+              max="20"
+              value="8.5"
+              step="0.1"
+            />
+          </div>
+
+          <div class="input-row">
+            <label>Tenure (Years):</label>
+            <input
+              type="number"
+              id="tenure-input"
+              class="value-input"
+              value="5"
+            />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="tenure-slider"
+              min="1"
+              max="10"
+              value="5"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="output-box">
+        <div class="main-output">
+          <span>Your Monthly EMI is: </span>
+          <span class="value-text" id="emi-result">₹8,207</span>
+        </div>
+
+        <hr class="separator-line" />
+
+        <div class="summary-values-grid">
+          <div class="summary-item">
+            <span class="label-text">Principal Amount:</span>
+            <span class="value-text" id="principal-result">₹4,00,000</span>
+          </div>
+          <div class="summary-item">
+            <span class="label-text">Total Interest:</span>
+            <span class="value-text" id="interest-result">₹92,397</span>
+          </div>
+          <div class="summary-item">
+            <span class="label-text">Total Amount:</span>
+            <span class="value-text" id="total-result">₹4,92,397</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="EMI-calculator.js"></script>
+  </body>
+</html>
