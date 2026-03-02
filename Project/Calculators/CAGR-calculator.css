@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     background-color: #fafafa;
     margin: 0;
@@ -11,7 +10,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Header is center-aligned */
 .calculator-container h2 {
     font-size: 28px;
     font-weight: 400;
@@ -21,7 +19,6 @@ body {
     color: #333;
 }
 
-/* Calculator Card Styles */
 .calculator-card {
     background-color: #fff;
     border-radius: 10px;
