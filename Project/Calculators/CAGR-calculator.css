@@ -1,5 +1,5 @@
 body {
-    background-color: #fafafa;
+    background-color: rgb(250, 250, 250);
     margin: 0;
     padding: 20px;
 }
@@ -16,18 +16,17 @@ body {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 0;
-    color: #333;
+    color: rgb(66, 72, 85);
 }
 
 .calculator-card {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 30px;
 }
 
-/* Input Styles */
 .calculator-inputs {
     margin-bottom: 30px;
 }
@@ -41,31 +40,26 @@ body {
 
 .input-row label {
     font-size: 16px;
-    color: #333;
+    color: rgb(49, 49, 69);
     width: 200px;
-    /* Gives a fixed width for alignment */
     margin-right: 15px;
 }
 
 .value-input {
     border: none;
-    border-bottom: 2px solid #5d7c71;
-    /* underline under input box */
+    border-bottom: 2px solid rgb(79, 92, 120);
     font-size: 18px;
     font-weight: 700;
     padding: 5px 0;
-    color: #333;
+    color: rgb(42, 50, 63);
     flex-grow: 1;
-    /* Input takes up remaining space */
 }
 
-/* Custom class to handle the inline value for duration */
 .value-input.inline-value {
     width: 30px;
     flex-grow: 0;
 }
 
-/* Slider Styles */
 .slider-container {
     margin-bottom: 25px;
 }
@@ -79,18 +73,15 @@ body {
     outline: none;
 }
 
-/* Thumb/circle for all sliders */
 .teal-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #5d7c71;
-    /* Teal green color */
+    background: rgb(78, 87, 118);
     cursor: pointer;
     border: 3px solid white;
-    /* white border */
 }
 
 .teal-slider::-moz-range-thumb {
@@ -98,14 +89,12 @@ body {
     height: 20px;
     border: 3px solid white;
     border-radius: 50%;
-    background: #5d7c71;
+    background: rgb(80, 99, 134);
     cursor: pointer;
 }
 
-/* Output Box Styles */
 .output-box {
-    background-color: #5d7c71;
-    /* Teal green background */
+    background-color: rgb(85, 87, 133);
     color: white;
     border-radius: 0 0 10px 10px;
     padding: 30px;
@@ -129,8 +118,7 @@ body {
 
 .separator-line {
     border: 0;
-    border-top: 1px solid #7a9c8f;
-    /* Horizontal line inside output box */
+    border-top: 1px solid rgb(100, 106, 156);
     margin: 15px 0;
 }
 
@@ -150,11 +138,9 @@ body {
     font-weight: 700;
 }
 
-/* Progress Bar at the bottom */
 .progress-container {
     height: 12px;
-    background-color: #88a69a;
-    /* Grey track */
+    background-color: rgb(97, 114, 164);
     border-radius: 6px;
     margin-top: 25px;
     overflow: hidden;
@@ -162,8 +148,6 @@ body {
 
 .progress-bar-fill {
     height: 100%;
-    background-color: #007bff;
-    /* Light blue color */
+    background-color: rgb(15, 111, 255);
     width: 0%;
-    /* Start at 0% */
 }
