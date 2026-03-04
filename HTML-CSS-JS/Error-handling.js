@@ -1,6 +1,6 @@
 //Complie time error
 // Syntax error
-// console.log(1;
+// console.log(1);
 
 // Run time error
 // Reference error
