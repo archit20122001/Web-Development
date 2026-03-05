@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 20px;
 }
@@ -10,7 +13,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.calculator-container h2 {
+h2 {
     font-size: 28px;
     font-weight: 400;
     text-align: center;
@@ -19,7 +22,7 @@ body {
     color: rgb(66, 72, 85);
 }
 
-.calculator-card {
+.card-container {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -27,7 +30,7 @@ body {
     padding: 30px;
 }
 
-.calculator-inputs {
+.input-card {
     margin-bottom: 30px;
 }
 
@@ -41,17 +44,18 @@ body {
 .input-row label {
     font-size: 16px;
     color: rgb(49, 49, 69);
-    width: 200px;
-    margin-right: 15px;
+    width: 260px; 
+    padding-right: 20px;
+    margin-right: 15px; 
 }
 
 .value-input {
     border: none;
-    border-bottom: 2px solid rgb(80, 99, 134);
+    border-bottom: 2px solid rgb(68, 104, 171);
     font-size: 18px;
     font-weight: 700;
     padding: 5px 0;
-    color: rgb(42, 50, 63);
+    color: rgb(30, 44, 68);
     flex-grow: 1;
 }
 
@@ -79,75 +83,57 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: rgb(80, 99, 134);
+    background: rgb(52, 102, 194);
     cursor: pointer;
     border: 3px solid white;
 }
 
-.teal-slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border: 3px solid white;
-    border-radius: 50%;
-    background: rgb(80, 99, 134);
-    cursor: pointer;
-}
-
-.output-box {
-    background-color: rgb(86, 90, 173);
+.output-card {
+    background-color: rgb(52, 102, 194);
     color: white;
     border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
     text-align: center;
 }
 
-.cagr-percentage {
+.output-row {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
-.cagr-percentage .label-text {
+.output-row .gratuity-amount {
     font-size: 18px;
     font-weight: 400;
     display: block;
 }
 
-.cagr-percentage .value-text {
-    font-size: 24px;
+.output-row .gratuity-value {
+    font-size: 18px;
     font-weight: 700;
 }
 
 .separator-line {
     border: 0;
-    border-top: 1px solid rgb(152, 160, 233);
+    border-top: 15px solid rgb(152, 160, 233);
     margin: 15px 0;
 }
 
-.summary-values {
+.summary-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
 }
 
-.summary-item {
+.summary-row {
     font-size: 18px;
     font-weight: 400;
 }
 
-.summary-item .value-text {
+.summary-row .value-text {
     font-weight: 700;
-}
-
-.progress-container {
-    height: 12px;
-    background-color: rgb(191, 197, 214);
-    border-radius: 6px;
-    margin-top: 25px;
-    overflow: hidden;
-}
-
-.progress-bar-fill {
-    height: 100%;
-    background-color: rgb(63, 66, 126);
-    width: 0%;
 }
