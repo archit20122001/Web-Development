@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const max = parseFloat(slider.max) || 100;
         const percentage = ((val - min) / (max - min)) * 100;
 
-        slider.style.background = `linear-gradient(to right, #5d7c71 0%, #5d7c71 ${percentage}%, #eee ${percentage}%, #eee 100%)`;
+        slider.style.background = `linear-gradient(to right, rgb(98, 105, 229) 0%, rgb(98, 105, 229) ${percentage}%, #eee ${percentage}%, #eee 100%)`;
     }
 
     function syncElements(slider, input) {
