@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Loan EMI Calculator</title>
+    <link rel="stylesheet" href="Home-Loan-EMI-calculator.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h2>Home Loan EMI Calculator</h2>
+      <div class="card-container">
+        <div class="input-card">
+          <div class="input-row">
+            <label>Loan Amount(₹):</label>
+            <input type="number" value="5000" class="value-input" />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="loan-amount-slider"
+              min="1000"
+              max="100000000"
+              value="5000"
+            />
+          </div>
+          <div class="input-row">
+            <label>Monthly Interest Rate (%):</label>
+            <input type="number" value="5" class="value-input" />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="interest-rate-slider"
+              min="1"
+              max="100"
+              value="5"
+            />
+          </div>
+          <div class="input-row">
+            <label>Loan Tenure (Years):</label>
+            <input type="number" value="5" class="value-input" />
+          </div>
+          <div class="slider-container">
+            <input
+              type="range"
+              class="teal-slider"
+              id="loan-tenure-slider"
+              min="1"
+              max="50"
+              value="5"
+            />
+          </div>
+        </div>
+
+        <div class="output-card">
+          <div class="output-row">
+            <span class="EMI-amount">Your Monthly EMI Amount: ₹</span>
+            <span class="EMI-value">0</span>
+          </div>
+          <hr class="seperator-line" />
+          <div class="summary-card">
+            <div class="summary-row">
+              <span>Principal Amount: ₹</span>
+              <span class="value-text">5,000</span>
+            </div>
+            <div class="summary-row">
+              <span>Total Interest: ₹</span>
+              <span class="value-text">500</span>
+            </div>
+            <div class="summary-row">
+              <span>Total Amount: ₹</span>
+              <span class="value-text">5,500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Home-Loan-EMI-calculator.js"></script>
+  </body>
+</html>
