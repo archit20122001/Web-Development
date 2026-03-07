@@ -1,4 +1,4 @@
-ry{
+// ry{
 //     // Reference error
 //     console.log(a);
 // }
