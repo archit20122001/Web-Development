@@ -1,7 +1,6 @@
 import { useToggle } from './hooks/useToggle';
 
 function App() {
-  // Use the hook multiple times for different UI elements
   const [isModalOpen, toggleModal] = useToggle(false);
   const [isDarkMode, toggleDarkMode] = useToggle(false);
 

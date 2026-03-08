@@ -8,10 +8,11 @@ function App() {
       return alert('Counter value cannot be greater than 20')
     else
       setCounter(counter + 1)
-  }
-
+    // if this is repeated multiple times, it will be of no use becasue the useState trats it like same function written to multiple times to render single element, hence it will bundle up all the functions and execute only once, so it will not update the counter value as expected, to avoid this we can use callback function in setCounter which will give us the latest value of counter and then we can update it accordingly.
+    }
+  
   const subtractValue = () => {
-    if (counter <=0)
+    if (counter <= 0)
       return alert('Counter value cannot be less than 0')
     else
       setCounter(counter - 1)
