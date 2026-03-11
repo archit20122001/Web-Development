@@ -10,7 +10,7 @@ import Github, { githubInfoLoader } from "./components/Github/Github";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,   // shared layout
+    element: <Layout />,
     children: [
       {
         path: "",
