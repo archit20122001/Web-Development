@@ -1,4 +1,7 @@
-import Header from './Header'
+import Header from './Header/Header'
 import Footer from './Footer'
+import Container from './Container';
+import LogoutBtn from './Header/LogoutBtn';
+import Logo from './Logo'
 
-export {Header, Footer};
+export { Header, Footer, Container, LogoutBtn, Logo };
