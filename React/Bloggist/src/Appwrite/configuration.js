@@ -25,7 +25,7 @@ export class Service {
                     content,
                     featuredImage,
                     status,
-                    userId
+                    userID: userId
                 }
             )
         }
@@ -46,7 +46,7 @@ export class Service {
                     content,
                     featuredImage,
                     status,
-                    userId
+                    userID: userId
                 }
             )
         } catch (error) {
@@ -99,8 +99,8 @@ export class Service {
     async uploadFile(file) {
         try {
             return await this.storage.createFile(
-                config.apperiteStorageId,
-                ID.unique,
+                config.appwriteStorageId,
+                ID.unique(),
                 file
             )
         } catch (error) {
@@ -111,7 +111,7 @@ export class Service {
     async deleteFile(fileId) {
         try {
             return await this.storage.deleteFile(
-                config.apperiteStorageId,
+                config.appwriteStorageId,
                 fileId
             )
             return true
@@ -120,9 +120,9 @@ export class Service {
         }
     }
 
-    getFilePreview(fileId) {
-        return this.storage.getFilePreview(
-            config.apperiteStorageId,
+    getFileView(fileId) {
+        return this.storage.getFileView(
+            config.appwriteStorageId,
             fileId
         )
     }
@@ -130,7 +130,7 @@ export class Service {
     downloadFile(fileId) {
         try {
             return this.storage.getFileDownload(
-                config.apperiteStorageId,
+                config.appwriteStorageId,
                 fileId
             )
 

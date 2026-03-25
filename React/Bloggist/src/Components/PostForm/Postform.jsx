@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import { Button, Input, Select } from '../index'
+import { Button, Input, Select, RTE } from '../index'
 import service from '../../Appwrite/configuration'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
@@ -102,7 +102,7 @@ export default function Postform({ post }) {
                 {post && (
                     <div className="w-full mb-4">
                         <img
-                            src={service.getFilePreview(post.featuredImage)}
+                            src={service.getFileView(post.featuredImage)}
                             alt={post.title}
                             className="rounded-lg"
                         />
