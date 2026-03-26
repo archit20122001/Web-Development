@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://archit20122001.github.io/Web-Development",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
