@@ -46,11 +46,11 @@ export default function Post() {
                 {isAuthor && (
                     <div className="flex justify-end gap-3 mt-4">
                         <Link to={`/edit-post/${post.$id}`}>
-                            <Button bgColor="bg-green-500" className="mr-3">
+                            <Button bgColor="bg-green-700" className="mr-3 p-2">
                                 Edit
                             </Button>
                         </Link>
-                        <Button bgColor="bg-red-500" onClick={deletePost}>
+                        <Button bgColor="bg-red-700" onClick={deletePost}>
                             Delete
                         </Button>
                     </div>
