@@ -100,7 +100,7 @@ export default function Postform({ post }) {
                     {...register("image", { required: !post })}
                 />
                 {post && (
-                    <div className="w-full mb-4">
+                    <div className="w-full mb-4 border-b-black">
                         <img
                             src={service.getFileView(post.featuredImage)}
                             alt={post.title}
