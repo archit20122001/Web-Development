@@ -1,3 +1,4 @@
+console.log("Hello from external code linking");
 var n = 2;
 function square(num) {
     var ans = num * num;
