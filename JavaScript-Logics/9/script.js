@@ -6,4 +6,4 @@ function add(a, b, cb) {
 
 add (3,7, function(val){
     console.log(val);
-})
+}) 
