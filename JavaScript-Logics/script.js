@@ -9,4 +9,4 @@ ele.classList.remove("red-color");
 const heading = document.getElementById("heading2");
 heading.style.textDecoration = "underline";
 heading.style.color = "rgb(113,113,204)"
-heading.parentElement.style.background = "lavender" 
+heading.parentElement.style.background = "lavender"
